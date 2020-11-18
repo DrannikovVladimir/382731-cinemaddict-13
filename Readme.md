@@ -1,7 +1,7 @@
 # Проект «Киноман» [![Build status][travis-image]][travis-url]
 
 * Студент: [Владимир Дранников](https://up.htmlacademy.ru/ecmascript/13/user/382731).
-* Наставник: `Неизвестно`.
+* Наставник: [Kekc].
 
 ---
 
