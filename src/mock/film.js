@@ -67,7 +67,7 @@ const getDurationFilm = () => {
   const restMinutes = minutes % 60;
 
   return `${hours}h ${restMinutes}m`;
-}
+};
 
 const getGenreFilm = () => {
   const genres = [
@@ -81,11 +81,7 @@ const getGenreFilm = () => {
     `Thriller`,
   ];
 
-  return genres.filter((genre) => {
-    if (getRandomInteger(1, 3) % 2 === 0) {
-      return genre;
-    }
-  });
+  return genres.filter((genre, index) => index % getRandomInteger(2, 3) === 0);
 };
 
 export const getDescriptionFilm = () => {
@@ -102,7 +98,7 @@ export const getDescriptionFilm = () => {
   };
 
   const getCountOfText = getRandomInteger(1, 5);
-  let result = '';
+  let result = ``;
 
   for (let i = 0; i < getCountOfText; i += 1) {
     result += `${text[getRandomInteger(1, 9)]} `;
@@ -144,11 +140,7 @@ const getFilmWriters = () => {
     `Drew Goddard`,
   ];
 
-  return writers.filter((writer) => {
-    if (getRandomInteger(1, 3) % 2 === 0) {
-      return writer;
-    }
-  });
+  return writers.filter((writer, index) => index % getRandomInteger(2, 3) === 0);
 };
 
 const getFilmActors = () => {
@@ -169,11 +161,7 @@ const getFilmActors = () => {
     `Morgan Freeman`,
   ];
 
-  return actors.filter((actor) => {
-    if (getRandomInteger(1, 3) % 2 === 0) {
-      return actor;
-    }
-  });
+  return actors.filter((actor, index) => index % getRandomInteger(2, 3) === 0);
 };
 
 const getReleaseDate = () => {

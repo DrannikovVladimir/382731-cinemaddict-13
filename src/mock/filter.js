@@ -1,5 +1,3 @@
-import {getRandomInteger} from '../util.js';
-
 const filmToFilterMap = {
   all: (films) => films.length,
   isWatchList: (films) => films.filter((film) => film.filters.isWatchList).length,
@@ -14,4 +12,4 @@ export const generateFilters = (films) => {
       count: countFilm(films),
     };
   });
-}
+};
