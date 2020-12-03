@@ -53,11 +53,11 @@ const getDateComment = () => {
   const hours = getRandomInteger(0, 23);
   const minutes = getRandomInteger(0, 59);
 
-  const editedHours = hours === 0 ? '00' : hours;
-  const editedMinutes = minutes === 0 ? '00' : minutes;
+  const editedHours = hours === 0 ? `00` : hours;
+  const editedMinutes = minutes === 0 ? `00` : minutes;
 
-  return `${year}/${month}/${day} ${hours}:${minutes}`;
-}
+  return `${year}/${month}/${day} ${editedHours}:${editedMinutes}`;
+};
 
 const generateComment = () => {
   return {
@@ -76,4 +76,4 @@ export const generateComments = () => {
     comments.push(currentComment);
   }
   return comments;
-}
+};
